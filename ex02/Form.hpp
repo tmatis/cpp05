@@ -32,7 +32,7 @@ class Form
 					Form(const std::string name, int gradeToSign, int gradeToExecute);
 					Form(const Form &src);
 					Form(void);
-					~Form();
+		virtual		~Form();
 		bool	isSigned(void) const;
 		void	beSigned(const Bureaucrat &b);
 		const std::string	&getName(void) const;
