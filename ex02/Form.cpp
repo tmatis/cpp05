@@ -13,7 +13,8 @@
 /* ************************************************************************** */
 
 Form::Form(const std::string name, int gradeToSign, int gradeToExecute)
-	: _name(name), _gradeToSign(gradeToSign), _gradeToExecute(gradeToExecute)
+	: _name(name), _gradeToSign(gradeToSign), _gradeToExecute(gradeToExecute),
+	_signed(false)
 {
 	if (gradeToSign < 1 || gradeToExecute < 1)
 		throw Form::GradeTooHighException();
